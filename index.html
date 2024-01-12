@@ -242,47 +242,5 @@
 <script type="text/javascript" src="dist/fullpage.js"></script>
 <script type="text/javascript" src="js/examples.js"></script>
 <script type="text/javascript" src="js/filter+modal.js"></script>
-<script>
-    var myFullpage = new fullpage('#fullpage', {
-        anchors: ['1', '2', '3', '4', '5', '6'],
-        controlArrows: false,
-        navigation: true,
-        slidesNavigation: true,
-        afterLoad: function(origin, destination, direction){
-                var activeSection = destination.item;
-
-        // Remove previous section's styles
-        document.getElementById('navbar').classList.remove('dark');
-
-// Add styles for the current section
-if (activeSection.id === 'work-design' || activeSection.id === 'footer') {
-    document.getElementById('navbar').classList.add('dark');
-}
-}
-    });
-</script>
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        var sections = document.querySelectorAll(".section");
-
-        var options = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.5
-        };
-
-        var observer = new IntersectionObserver(function(entries) {
-            entries.forEach(function(entry) {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add("active");
-                } else {
-                    entry.target.classList.remove("active");
-                }
-            });
-        }, options);
-
-        sections.forEach(function(section) {
-            observer.observe(section);
-        });
-    });
-</script>
+<script type="text/javascript" src="js/textanimation.js"></script>
+<script type="text/javascript" src="js/navbar.js"></script>
