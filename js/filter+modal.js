@@ -21,6 +21,9 @@
     }
 
 /* ------------------------------------------------------------------------- */
+/* 동영상 모달 창 ㅣ 테스트 중 */
+
+/* ------------------------------------------------------------------------- */
 
         // 필터링 함수
         function filterImages(category) {
@@ -49,12 +52,14 @@
             var modalImage = document.getElementById("modalImage");
             var modalCaption = document.getElementById("modalCaption");
             var modalCaption2 = document.getElementById("modalCaption2");
+            // var modalCaption3 = document.getElementById("modalCaption3");
             // var videoContent = document.getElementById("video-content");
             var modalTitle = document.getElementById("modalTitle");
             
             modalImage.src = imageSrc;
             modalCaption.innerText = caption;
             modalCaption2.innerText = caption2;
+        //  modalCaption3.innerText = caption3;
             modalTitle.innerText = title;
     
             modal.style.display = "flex";
