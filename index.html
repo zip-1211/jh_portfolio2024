@@ -11,39 +11,58 @@
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
-
-    <!-- <link rel="stylesheet" href="aos/aos.css">
-    <link rel="stylesheet" href="aos/aos.js"> -->
+    <!-- 텍스트 애니메이션 (메인) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- 텍스트 애니메이션 (어바웃 테스트 중) -->
+    <link rel="stylesheet" href="css/animations.css">
 
 	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
 <body>
+    <div id="navbar">
+        <a href="index.html" class="stylenone">jeonghyeoun kim.</a>
+        <!-- <a href="#">Main</a> -->
+        <a href="#"></a>
+        <a href="#2">About</a>
+        <a href="#3">Web Design</a>
+        <a href="#4">Design</a>
+        <a href="#5">Footer</a>
+      </div>
+      
 <div id="fullpage">
     <div id="main-bg">
      <div class="section" id="section0">
-        <h2><span style="color:blue">Nice</span> To <span class="point1"">Meet</span> U</h2>
-        <h3>My 2024 <span class="point2"">Portfolio</span>*</h3>
-		    <p>
+        <h2 class="animate__animated animate__fadeInUp title_1"><span style="color:blue">Nice</span> To <span class="point1"">Meet</span> U</h2>
+        <h3 class="animate__animated animate__fadeInUp title_2">My 2024 <span class="point2">Portfolio</span><span class="point3">*</span></h3>
+		    <p class="animate__animated animate__fadeInUp title_3">
                 _____  Designer, Kim jeong hyeon
             </p>
      </div>
     </div>
 	<div class="section" id="section1">
-        <div class="about" >
+        <div class="about">
             <div class="tape">
                 <img src="img/tape.png" alt="마스킹테이프" class="tape1">
                 <img src="img/tape2.png" alt="마스킹테이프" class="tape2">
             </div>
             <div class="selfie" ><img src="img/me.jpg" alt="프로필"></div>
           <div id="my-portfolio">
-            <h1>Hello! I am</h1>
-            <h2><span>Web Designer</span> 정현</h2>
+            <h1 class="animated-text">H</h1>
+            <h1 class="animated-text2">e</h1>
+            <h1 class="animated-text3">l</h1>
+            <h1 class="animated-text4">l</h1>
+            <h1 class="animated-text5">o</h1>
+            <h1 class="animated-text6">!</h1>
+            <h1 clas="iam">I am</h1>
+            <h2 ><span>Web Designer</span> 정현</h2>
 			<p>
+                안녕하세요. 끊임없이 도전하는 디자이너 김정현입니다.<br>
                 저는 시각 디자인으로 시작해 디자인의 영역을 넓히고 싶어<br>
                 기획, 브랜딩, 퍼블리싱 등 다양한 분야를 공부 중인 디자이너입니다.<br>
                 근성 하나로 저의 색을 만들고, 한계가 없는 끝을 달리며<br>
-                ㅁㅁ한 환경 / 좋은 사람과 함께 좋은 결과를 만들고 싶습니다.<br>
+                좋은 동료들과 함께 긍정적인 결과를 만들고 싶습니다.<br>
 			</p>
             <button><a href="https://clean-thunder-a6a.notion.site/2023-4c4ab09324f942018d90bb39c353d2a3?pvs=4" target="_blank">더 자세한 자기소개</a></button>
             </div>
@@ -54,7 +73,7 @@
             <div class="slide" id="web0">
              <div class="web-portfolio">
                 <h1>Work</h1>
-                <h2>Web site #1</h2>
+                <h2 class="website_bg">Web site #1</h2>
                 <h3>서울대공원</h3>
                 <p>Main page, Sub 9 page<br>
                     <span>( Home, join, login, signup, notice, board, photo 1˙2, info )</span>
@@ -121,59 +140,61 @@
             </div>  
             <div class="gallery">
              <div class="work-img video" data-category="Product">
-             <img src="img/work-1/pet.jpg" alt="삼시펫끼" onclick="openModal('img/work-2/pet-product.jpg', 'UI/UX디자인, 제품디자인, 영상디자인', '개인 작업 100%', '자동급식기 삼시펫끼')">
+             <img src="img/work-1/pet.jpg" alt="삼시펫끼" onclick="openModal('img/work-2/pet-product.jpg', 'UI/UX디자인, 제품디자인, 영상디자인', '개인 작업 │ Ps, Ai, Rhino, KeyShot', '자동급식기 삼시펫끼')">
              </div>
+
              <div class="work-img" data-category="UI/UX">
-             <a href="https://www.behance.net/gallery/143321989/UI-UX-" target="_blank"><img src="img/work-1/ontoff.jpg" alt="디자인 1"></a>
-             </div>
+             <a href="https://www.behance.net/gallery/143321989/UI-UX-" target="_blank"><img src="img/work-1/ontoff.jpg" alt="디자인 1"></a></div>
              <div class="work-img" data-category="UI/UX">
-              <img src="img/work-1/fumeet.jpg" alt="디자인 2" onclick="openModal('img/work-2/fumeet-mini.png', 'UI/UX디자인, 제품디자인, 영상디자인', '개인 작업 100%', '자동급식기 삼시펫끼')">
-             </div>
+              <img src="img/work-1/fumeet.jpg" alt="디자인 2" onclick="openModal('img/work-2/fumeet-mini.png', 'UI/UX디자인', '개인 작업 │ Ps, Ai, XD', '음식 예약 애플리케이션')">
+            </div>
              <div class="work-img" data-category="LOGO">
-              <img src="img/work-1/papa-main.jpg" alt="디자인 2" onclick="openModal('img/work-2/papa.png', '로고디자인', '개인 작업 100%', '파파레서피')">
-             </div>
+              <img src="img/work-1/papa-main.jpg" alt="디자인 2" onclick="openModal('img/work-2/papa.png', '로고디자인', '개인 작업 │ Ps, Ai', '파파레서피')">
+            </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/ginseng.jpg" alt="디자인 7" onclick="openModal('img/work-2/ad2.png', '메타 광고 이미지', '[회사] 개인 작업 100%', '홍삼 Sale, 1+1 광고')">
-             </div>
+              <img src="img/work-1/ginseng.jpg" alt="디자인 7" onclick="openModal('img/work-2/ad2.png', '메타 광고 이미지', '회사 작업 │ Ps', '홍삼 Sale, 1+1 광고')">
+            </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/lacto.jpg" alt="디자인 8" onclick="openModal('img/work-2/lacto-con.jpg', '메타 광고 이미지', '[회사] 개인 작업 100%', '유산균 1+1 광고')">
-             </div>
+              <img src="img/work-1/lacto.jpg" alt="디자인 8" onclick="openModal('img/work-2/lacto-con.jpg', '메타 광고 이미지', '회사 작업 │ Ps', '유산균 1+1 광고')">
+            </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/poopoo.jpg" alt="디자인 9" onclick="openModal('img/work-2/poopoo2.png', '인스타그램 피드, PC·모바일 배너', '[회사] 개인 작업 100%', '푸푸잘싸 프로모션')">
-             </div>
+              <img src="img/work-1/poopoo.jpg" alt="디자인 9" onclick="openModal('img/work-2/poopoo2.png', '인스타그램 피드, PC·모바일 배너', '회사 작업 │ Ps', '푸푸잘싸 프로모션')">
+            </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/jeju.jpg" alt="디자인 8" onclick="openModal('img/work-2/sunduk-card.png', '인스타그램 피드, 카드뉴스', '[회사] 개인 작업 100%', '선덕제주')">
-             </div>
+              <img src="img/work-1/jeju.jpg" alt="디자인 8" onclick="openModal('img/work-2/sunduk-card.png', '인스타그램 피드, 카드뉴스', '회사 작업 │ Ps', '선덕제주')">
+            </div>
+             <img src="img/work-1/amini.jpg" alt="디자인 5" onclick="openModal('img/work-2/amini.png', '스마트스토어, PC·모바일 배너, 팝업', '회사 작업 │ Ps', '아미니 프로모션')">
+             <div class="work-img" data-category="Graphic">
+              <img src="img/work-1/seolarae.jpg" alt="디자인 3" onclick="openModal('img/work-2/seolarae-con.png', 'PC·모바일 배너, 스마트스토어, 이벤트', '회사 작업 │ Ps', '설아래 추석 프로모션')">
+            </div>
+             <div class="work-img" data-category="Graphic">
+              <img src="img/work-1/0904.jpg" alt="디자인 5" onclick="openModal('img/work-2/0904.png', 'PC·모바일 배너, 스마트스토어', '회사 작업 │ Ps', '추석 선물 세트 광고')">
+            </div>
 
-             <!-- <img src="img/work-1/amini.jpg" alt="디자인 5" onclick="openModal('img/work-2/amini.png', '스마트스토어, PC·모바일 배너, 팝업', '[회사] 개인 작업 100%', '아미니 프로모션')"> -->
+             <!-- <div class="work-img" data-category="Graphic">
+              <img src="img/work-1/wetrust.jpg" alt="디자인 3" onclick="openModal('img/work-2/wetrust.png', 'PC·모바일 배너, 인스타그램 피드, 이벤트', '회사 작업 │ Ps', '위트러스트 프로모션')">
+            </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/seolarae.jpg" alt="디자인 3" onclick="openModal('img/work-2/seolarae-con.png', 'PC·모바일 배너, 스마트스토어, 이벤트', '[회사] 개인 작업 100%', '설아래 추석 프로모션')">
-             </div>
-             <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/0904.jpg" alt="디자인 5" onclick="openModal('img/work-2/0904.png', 'PC·모바일 배너, 스마트스토어', '[회사] 개인 작업 100%', '추석 선물 세트 광고')">
-             </div>
-             <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/wetrust.jpg" alt="디자인 3" onclick="openModal('img/work-2/wetrust.png', 'PC·모바일 배너, 인스타그램 피드, 이벤트', '[회사] 개인 작업 100%', '위트러스트 프로모션')">
-             </div>
-             <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/refund.jpg" alt="디자인 6" onclick="openModal('img/work-2/refund-con.jpg', 'PC·모바일 배너, 팝업, 이벤트', '[회사] 개인 작업 100%', '100% 환불 보장 EVENT')">
-             </div>
+              <img src="img/work-1/refund.jpg" alt="디자인 6" onclick="openModal('img/work-2/refund-con.jpg', 'PC·모바일 배너, 팝업, 이벤트', '회사 작업 │ Ps', '100% 환불 보장 EVENT')">
+            </div> 
+            <div class="work-img" data-category="Graphic">
+            <img src="img/work-1/Vabd.jpg" alt="디자인 4" onclick="openModal('img/work-2/test1.jpg', '메타 광고, 공지사항 안내 포스터', '회사 작업 │ Ps', '모집 안내 포스터')">
+            </div>  
+            -->
 
-             <div class="work-img" data-category="UI/UX">
-              <img src="img/work-1/pet.jpg" alt="디자인 2" onclick="openModal('img/work-2/pet-Visual.jpg', 'UI/UX디자인, 제품디자인, 영상디자인', '개인 작업 100%', '자동급식기 삼시펫끼')">
-             </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/herb.jpg" alt="디자인 4" onclick="openModal('img/work-2/herb-banner.png', '실외용 X-배너', '[외주] 개인 작업 100%', 'X-배너')">
+                <img src="img/work-1/main-poster.jpg" alt="디자인 2" onclick="openModal('img/work-2/poster.png', '메타 광고, 공지사항 안내 포스터', '회사 작업 │ Ps', '프로모션 포스터')">
              </div>
+            
+             <div class="work-img" data-category="Graphic">
+              <img src="img/work-1/herb.jpg" alt="디자인 4" onclick="openModal('img/work-2/herb-banner.png', '실외용 X-배너', '외주 작업 │ Ps, Ai', 'X-배너')">
+            </div>
              <div class="work-img" data-category="Product">
-                <img src="img/work-1/kick.jpg" alt="디자인 4" onclick="openModal('img/work-2/kick.gif', '실외용 X-배너', '[외주] 개인 작업 100%', 'X-배너')">
-               </div>
+                <img src="img/work-1/kick.jpg" alt="디자인 4" onclick="openModal('img/work-2/kick.gif', '원본 샘플 : Xiaomi Mi 접는 전동 스쿠터 3D', '외주 작업', '119 전동 킥보드')">
+            </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/Vabd.jpg" alt="디자인 4" onclick="openModal('img/work-2/test1.jpg', '메타 광고, 공지사항 안내 포스터', '[회사] 개인 작업 100%', '앰버서더 모집 포스터')">
-             </div>  
-             <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/live.png" alt="디자인 4" onclick="openModal('img/work-2/test1.jpg', '메타 광고, 공지사항 안내 포스터', '[회사] 개인 작업 100%', '앰버서더 모집 포스터')">
-             </div>
+              <img src="img/work-1/naverlive.jpg" alt="디자인 4" onclick="openModal('img/work-2/naverlive.png', '네쇼라 안내 광고, 인스타그램 스토리 광고', '회사 작업 │ Ps', '네이버 쇼핑 라이브')">
+            </div>
   
             
             <!-- 모달 -->
@@ -183,15 +204,12 @@
                     <h3 class="modal-title" id="modalTitle"></h3>
                     <p id="modalCaption"></p>
                     <p id="modalCaption2"></p>
-                   <!--  <div class="video-player">
-                     <video id="videoContent" class="video-content">
-                        <source src="img/work-2/petday-vd.mp4" type="video/mp4">
-                     </video>
-                    </div> -->
+               <!-- <p id="modalCaption3"></p>  -->
                     <img id="modalImage" class="modal-img" src="" alt="Modal Image">
                 </div>
             </div>
-                  
+
+
         </div>
         
     </div>
@@ -199,7 +217,16 @@
     </div>
     <div class="section" id="footer">
     <div class="thx">
-        <h1>Thank y0u</h1>
+        <div class="wave_text">
+         <span>T</span>
+         <span>h</span>
+         <span>a</span>
+         <span>n</span>
+         <span>k</span>&nbsp;
+         <span>y</span>
+         <span>☺</span>
+         <span>u</span>
+        </div>
         <p>끝까지 봐 주셔서 감사합니다!</p>
         <div class="fin">
          <p>본 포트폴리오는 비상업적 용도로 제작되었습니다</p>
@@ -210,19 +237,52 @@
         <p>© 2024 Jeounghyeoun-Kim. All Rights Reserved.</p>
     </div>
     </div>
-
+</body>
+</html>
 <script type="text/javascript" src="dist/fullpage.js"></script>
 <script type="text/javascript" src="js/examples.js"></script>
 <script type="text/javascript" src="js/filter+modal.js"></script>
 <script>
     var myFullpage = new fullpage('#fullpage', {
-        anchors: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13'],
+        anchors: ['1', '2', '3', '4', '5', '6'],
         controlArrows: false,
         navigation: true,
-        slidesNavigation: true
+        slidesNavigation: true,
+        afterLoad: function(origin, destination, direction){
+                var activeSection = destination.item;
 
+        // Remove previous section's styles
+        document.getElementById('navbar').classList.remove('dark');
+
+// Add styles for the current section
+if (activeSection.id === 'work-design' || activeSection.id === 'footer') {
+    document.getElementById('navbar').classList.add('dark');
+}
+}
     });
 </script>
-</body>
-</html>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        var sections = document.querySelectorAll(".section");
 
+        var options = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.5
+        };
+
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, options);
+
+        sections.forEach(function(section) {
+            observer.observe(section);
+        });
+    });
+</script>
