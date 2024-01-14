@@ -169,6 +169,7 @@ p{
 
 #main-bg {
 	background-image: url('img/testmain-bg.png');
+	background-size:cover;
 	height:100%
 }
 
@@ -266,6 +267,7 @@ p{
 
 #section1{
 	background-image: url(img/testabout-bg.png);
+	background-size:cover;
 }
 
 /* 텍스트 애니메이션 */
@@ -576,7 +578,9 @@ transition: 0.8s ease;
 	position: left;
 	height:100%;
 	margin: 0;
-	background-image:url(img/testdesign-bg.png)}
+	background-image:url(img/testdesign-bg.png);
+	background-size:cover;
+}
 
 .design {top:0; margin:10em 10em 2em 10em;}
 
@@ -792,6 +796,7 @@ transition: 0.8s ease;
 #footer {
 	font-family: 'Noto Sans KR', sans-serif;
 	background-image:url(img/testthx.png);
+	background-size:cover;
 	height:100%}
 	
 #footer .thx p {
