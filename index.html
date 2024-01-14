@@ -14,10 +14,6 @@
     <!-- 텍스트 애니메이션 (메인) -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
-    <!-- <link rel="stylesheet" href="css/animate.css"> -->
-    <!-- 텍스트 애니메이션 (어바웃 테스트 중) -->
-    <!-- <link rel="stylesheet" href="css/animations.css"> -->
-
 	<link rel="stylesheet" type="text/css" href="dist/fullpage.css" />
 	<link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -27,44 +23,61 @@
         <!-- <a href="#">Main</a> -->
         <a href="#"></a>
         <a href="#2">About</a>
-        <a href="#3">Web Design</a>
+        <a href="#3">Web Site</a>
         <a href="#4">Design</a>
-        <a href="#5">Footer</a>
+        <a href="#5">Contact</a>
       </div>
       
 <div id="fullpage">
     <div id="main-bg">
      <div class="section" id="section0">
-        <h2 class="animate__animated animate__fadeInUp title_1"><span style="color:blue">Nice</span> To <span class="point1"">Meet</span> U</h2>
-        <h3 class="animate__animated animate__fadeInUp title_2">My 2024 <span class="point2">Portfolio</span><span class="point3">*</span></h3>
-		    <p class="animate__animated animate__fadeInUp title_3">
-                _____  Designer, Kim jeong hyeon
-            </p>
+        <div class="main_tit">
+        <h2 class="animate__animated animate__fadeInUp title_1"><span class="point">Nice</span> To <span class="point1"">Meet</span> U</h2>
+        <h3 class="animate__animated animate__fadeInUp title_2">My 2024 <span class="point2">Portfolio</span><span class="point3">⋆</span></h3>
      </div>
+     <div class="ellipse-wrap">
+        <svg version="1.1" id="mySvg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 50 18" xml:space="preserve">
+           <ellipse class="st0" cx="25" cy="10" rx="15" ry="5" transform="rotate(-8, 2, 10)"/>
+        </svg>
+     </div>
+     <!-- <p class="animate__animated animate__fadeInUp title_3">
+        _____  Designer, Kim jeong hyeon
+    </p> -->
+</div>
     </div>
 	<div class="section" id="section1">
         <div class="about">
-            <div class="tape">
+            <!-- <div class="tape">
                 <img src="img/tape.png" alt="마스킹테이프" class="tape1">
                 <img src="img/tape2.png" alt="마스킹테이프" class="tape2">
             </div>
-            <div class="selfie" ><img src="img/me.jpg" alt="프로필"></div>
+            <div class="selfie" ><img src="img/me.jpg" alt="프로필"></div> -->
           <div id="my-portfolio">
-            <h1 class="animated-text">H</h1>
-            <h1 class="animated-text2">e</h1>
-            <h1 class="animated-text3">l</h1>
-            <h1 class="animated-text4">l</h1>
-            <h1 class="animated-text5">o</h1>
-            <h1 class="animated-text6">!</h1>
-            <h1 clas="iam">I am</h1>
-            <h2 ><span>Web Designer</span> 정현</h2>
-			<p>
-                안녕하세요. 끊임없이 도전하는 디자이너 김정현입니다.<br>
+            <div class="hello">
+             <h1 class="animated-text">H</h1>
+             <h1 class="animated-text2">e</h1>
+             <h1 class="animated-text3">l</h1>
+             <h1 class="animated-text4">l</h1>
+             <h1 class="animated-text5">o</h1>
+             <h1 class="animated-text6">!</h1>
+             <h1 style="text-shadow: -1px 0 #1a0800, 0 1px #1a0800, 1px 0 #1a0800, 0 -1px #1a0800;
+             font-size: 4.5vw; color: #0073bd">I am</h1>
+            </div>
+            <h2><span>Web Designer</span> 정현</h2>
+            <p>안녕하세요, <span class="t_over">끊임없이 도전하는</span> 김정현입니다.</p><br>
+            <p>저는 시각 디자인으로 시작해 디자인의 영역을 넓히고 싶어</p><br>
+            <p>기획, 브랜딩, 퍼블리싱 등 다양한 분야를 공부 중인 <span class="t_over">디자이너</span>입니다.</p><br>
+            <p>근성 하나로 저의 색을 만들고, 한계가 없는 끝을 달리며</p><br>
+            <p>좋은 동료들과 함께 긍정적인 결과를 만들고 싶습니다.</p><br>
+
+			<!-- <p>
+                안녕하세요, 끊임없이 도전하는 디자이너 김정현입니다.<br>
                 저는 시각 디자인으로 시작해 디자인의 영역을 넓히고 싶어<br>
                 기획, 브랜딩, 퍼블리싱 등 다양한 분야를 공부 중인 디자이너입니다.<br>
                 근성 하나로 저의 색을 만들고, 한계가 없는 끝을 달리며<br>
                 좋은 동료들과 함께 긍정적인 결과를 만들고 싶습니다.<br>
-			</p>
+			</p> -->
             <button><a href="https://clean-thunder-a6a.notion.site/2023-4c4ab09324f942018d90bb39c353d2a3?pvs=4" target="_blank">더 자세한 자기소개</a></button>
             </div>
           </div>
@@ -76,7 +89,7 @@
                 <h1>Work</h1>
                 <h2 class="website_bg">Web site #1</h2>
                 <h3>서울대공원</h3>
-                <p>Main page, Sub 9 page<br>
+                <p class="en">Main page, Sub 9 page<br>
                     <span>( Home, join, login, signup, notice, board, photo 1˙2, info )</span>
                 </p>
                 <p>개인 작업</p>
@@ -88,7 +101,7 @@
                 <h1>Work</h1>
                 <h2>Web site #2</h2>
                 <h3>2023 포트폴리오</h3>
-                <p>Full page</p>
+                <p class="en">Full page</p>
                 <p>개인 작업</p>
                 <button><a href="https://zip-1211.github.io/portfolio2023" target="_blank">보러 가기</a></button>
              </div>
@@ -98,7 +111,7 @@
                 <h1>Work</h1>
                 <h2>Web site #3</h2>
                 <h3>맥도날드</h3>
-                <p>Main page</p>
+                <p class="en">Main page</p>
                 <p>개인 작업</p>
                 <button><a href="https://zip-1211.github.io/portfolio2023/web-pj/mcd/index.html" target="_blank">보러 가기</a></button>
              </div>
@@ -108,7 +121,7 @@
                 <h1>Work</h1>
                 <h2>Web site #4</h2>  
                 <h3>모바일 MAC</h3>
-                <p>Main page, Sub 10 page<br>
+                <p class="en">Main page, Sub 10 page<br>
                     <span>( Home, join, login, signup, story, store, shopping, detail page 1˙2˙3)</span>
                 <p>팀 작업 60%</p>
                 <button><a href="https://zip-1211.github.io/portfolio2023/web-pj/mac/index.html" target="_blank">보러 가기</a></button>
@@ -119,7 +132,7 @@
                 <h1>Work</h1>
                 <h2>Web site #5</h2>
                 <h3>WWF 세계자연기금</h3>
-                <p>Responsive page<br>
+                <p class="en">Responsive page<br>
                  <span>Bootstrap</span>
                 </p>
                 <p>개인 작업</p>
@@ -147,34 +160,34 @@
              <div class="work-img" data-category="UI/UX">
              <a href="https://www.behance.net/gallery/143321989/UI-UX-" target="_blank"><img src="img/work-1/ontoff.jpg" alt="디자인 1"></a></div>
              <div class="work-img" data-category="UI/UX">
-              <img src="img/work-1/fumeet.jpg" alt="디자인 2" onclick="openModal('img/work-2/fumeet-mini.png', 'UI/UX디자인', '개인 작업 │ Ps, Ai, XD', '음식 예약 애플리케이션')">
+              <img src="img/work-1/fumeet.jpg" alt="푸밋" onclick="openModal('img/work-2/fumeet-mini.png', 'UI/UX디자인', '개인 작업 │ Ps, Ai, XD', '음식 예약 애플리케이션')">
             </div>
              <div class="work-img" data-category="LOGO">
-              <img src="img/work-1/papa-main.jpg" alt="디자인 2" onclick="openModal('img/work-2/papa.png', '로고디자인', '개인 작업 │ Ps, Ai', '파파레서피')">
+              <img src="img/work-1/papa-main.jpg" alt="파파레서피 로고" onclick="openModal('img/work-2/papa.png', '로고디자인', '개인 작업 │ Ps, Ai', '파파레서피')">
             </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/ginseng.jpg" alt="디자인 7" onclick="openModal('img/work-2/ad2.png', '메타 광고 이미지', '회사 작업 │ Ps', '홍삼 Sale, 1+1 광고')">
+              <img src="img/work-1/ginseng.jpg" alt="홍삼 메타 광고" onclick="openModal('img/work-2/ad2.png', '메타 광고 이미지', '회사 작업 │ Ps', '홍삼 Sale, 1+1 광고')">
             </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/lacto.jpg" alt="디자인 8" onclick="openModal('img/work-2/lacto-con.png', '메타 광고 이미지', '회사 작업 │ Ps', '유산균 1+1 광고')">
+              <img src="img/work-1/lacto.jpg" alt="유산균 메타 광고" onclick="openModal('img/work-2/lacto.png', '메타 광고 이미지', '회사 작업 │ Ps', '유산균 1+1 광고')">
             </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/poopoo.jpg" alt="디자인 9" onclick="openModal('img/work-2/poopoo2.png', '인스타그램 피드, PC·모바일 배너', '회사 작업 │ Ps', '푸푸잘싸 프로모션')">
+              <img src="img/work-1/poopoo.jpg" alt="푸푸잘싸" onclick="openModal('img/work-2/poopoo.png', '인스타그램 피드, PC·모바일 배너', '회사 작업 │ Ps', '푸푸잘싸 프로모션')">
             </div>
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/jeju.jpg" alt="디자인 8" onclick="openModal('img/work-2/sunduk-card.png', '인스타그램 피드, 카드뉴스', '회사 작업 │ Ps', '선덕제주')">
+              <img src="img/work-1/jeju.jpg" alt="선덕제주" onclick="openModal('img/work-2/sunduk.png', '인스타그램 피드, 카드뉴스', '회사 작업 │ Ps', '선덕제주')">
             </div>
-             <img src="img/work-1/amini.jpg" alt="디자인 5" onclick="openModal('img/work-2/amini.png', '스마트스토어, PC·모바일 배너, 팝업', '회사 작업 │ Ps', '아미니 프로모션')">
+            <div class="work-img" data-category="Graphic">
+                <img src="img/work-1/main-poster.jpg" alt="프로모션 포스터" onclick="openModal('img/work-2/poster1.png', '메타 광고, 공지사항 안내 포스터', '회사 작업 │ Ps', '프로모션 포스터')">
+             </div>
+             <img src="img/work-1/amini.jpg" alt="아미니" onclick="openModal('img/work-2/amini.png', '스마트스토어, PC·모바일 배너, 팝업', '회사 작업 │ Ps', '아미니 프로모션')">
              <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/seolarae.jpg" alt="디자인 3" onclick="openModal('img/work-2/seolarae-con.png', 'PC·모바일 배너, 스마트스토어, 이벤트', '회사 작업 │ Ps', '설아래 추석 프로모션')">
+              <img src="img/work-1/seolarae.jpg" alt="설아래" onclick="openModal('img/work-2/seolarae.png', 'PC·모바일 배너, 스마트스토어, 이벤트', '회사 작업 │ Ps', '설아래 추석 프로모션')">
             </div>
-             <div class="work-img" data-category="Graphic">
+             <!--  <div class="work-img" data-category="Graphic">
               <img src="img/work-1/0904.jpg" alt="디자인 5" onclick="openModal('img/work-2/0904.png', 'PC·모바일 배너, 스마트스토어', '회사 작업 │ Ps', '추석 선물 세트 광고')">
             </div>
 
-             <!-- <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/wetrust.jpg" alt="디자인 3" onclick="openModal('img/work-2/wetrust.png', 'PC·모바일 배너, 인스타그램 피드, 이벤트', '회사 작업 │ Ps', '위트러스트 프로모션')">
-            </div>
              <div class="work-img" data-category="Graphic">
               <img src="img/work-1/refund.jpg" alt="디자인 6" onclick="openModal('img/work-2/refund-con.jpg', 'PC·모바일 배너, 팝업, 이벤트', '회사 작업 │ Ps', '100% 환불 보장 EVENT')">
             </div> 
@@ -182,21 +195,18 @@
             <img src="img/work-1/Vabd.jpg" alt="디자인 4" onclick="openModal('img/work-2/test1.jpg', '메타 광고, 공지사항 안내 포스터', '회사 작업 │ Ps', '모집 안내 포스터')">
             </div>  
             -->
-
+            <div class="work-img" data-category="Graphic">
+                <img src="img/work-1/wetrust.jpg" alt="위트러스트" onclick="openModal('img/work-2/wetrust.png', 'PC·모바일 배너, 인스타그램 피드, 이벤트', '회사 작업 │ Ps', '위트러스트 프로모션')">
+               </div>
              <div class="work-img" data-category="Graphic">
-                <img src="img/work-1/main-poster.jpg" alt="디자인 2" onclick="openModal('img/work-2/poster.png', '메타 광고, 공지사항 안내 포스터', '회사 작업 │ Ps', '프로모션 포스터')">
+                <img src="img/work-1/herb.jpg" alt="X-배너" onclick="openModal('img/work-2/herb.png', '실외용 X-배너', '외주 작업 │ Ps, Ai', 'X-배너')">
+               </div>
+             <div class="work-img" data-category="Graphic">
+              <img src="img/work-1/naverlive.jpg" alt="네쇼라" onclick="openModal('img/work-2/naverlive.png', '네쇼라 안내 광고, 인스타그램 스토리 광고', '회사 작업 │ Ps', '네이버 쇼핑 라이브')">
+            </div>
+            <div class="work-img" data-category="Product">
+                <img src="img/work-1/kick.jpg" alt="킥보드" onclick="openModal('img/work-2/kick.gif', '원본 샘플 : Xiaomi Mi 접는 전동 스쿠터 3D', '외주 작업', '119 전동 킥보드')">
              </div>
-            
-             <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/herb.jpg" alt="디자인 4" onclick="openModal('img/work-2/herb-banner.png', '실외용 X-배너', '외주 작업 │ Ps, Ai', 'X-배너')">
-            </div>
-             <div class="work-img" data-category="Product">
-                <img src="img/work-1/kick.jpg" alt="디자인 4" onclick="openModal('img/work-2/kick.gif', '원본 샘플 : Xiaomi Mi 접는 전동 스쿠터 3D', '외주 작업', '119 전동 킥보드')">
-            </div>
-             <div class="work-img" data-category="Graphic">
-              <img src="img/work-1/naverlive.jpg" alt="디자인 4" onclick="openModal('img/work-2/naverlive.png', '네쇼라 안내 광고, 인스타그램 스토리 광고', '회사 작업 │ Ps', '네이버 쇼핑 라이브')">
-            </div>
-  
             
             <!-- 모달 -->
             <div id="myModal" class="modal">
@@ -228,12 +238,12 @@
          <span>☺</span>
          <span>u</span>
         </div>
-        <p>끝까지 봐 주셔서 감사합니다!</p>
-        <div class="fin">
-         <p>본 포트폴리오는 비상업적 용도로 제작되었습니다</p>
-        </div>
+        <p class="kr">끝까지 봐 주셔서 감사합니다!</p>
+        <p class="email">zip_hh@naver.com</p>
     </div>
-    <div class="fin2">
+
+    <div class="fin">
+        <p class="fin_t">본 포트폴리오는 비상업적 용도로 제작되었습니다</p>
         <p>Resolution : 1920x1080</p>
         <p>© 2024 Jeounghyeoun-Kim. All Rights Reserved.</p>
     </div>
@@ -245,3 +255,7 @@
 <script type="text/javascript" src="js/filter+modal.js"></script>
 <script type="text/javascript" src="js/textanimation.js"></script>
 <script type="text/javascript" src="js/navbar.js"></script>
+<script src="https://unpkg.com/vivus@0.4.5/dist/vivus.min.js"></script>
+<script>
+   var animation = new Vivus('mySvg', { type: 'oneByOne', duration: 180, start: 'autostart', dashGap: 20 });
+</script>
