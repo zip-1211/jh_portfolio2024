@@ -26,7 +26,7 @@ body {
 	/* background-color: rgba(224, 243, 255, 0.2); 배경색 동일 */
 	/* background-color: rgba(17, 17, 17, 1); */
 	/* border-bottom: 1px #5f666e solid; */
-	border-bottom: 1px #000 solid;
+	border-bottom: 1px none solid;
 	background:rgba(255, 255, 255, 0); backdrop-filter: blur(5px);
 	position: fixed;
 	top: 0;
@@ -42,18 +42,19 @@ body {
   }
   
   #navbar a {
-	color: #000;
+	color: #005287;
+	/* text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 10px #006bcc, 0 0 50px #006bcc, 0 0 10px #006bcc, 0 0 50px #006bcc, 0 0 5px #006bcc; */
 	text-decoration: none;
 	transition: color 0.6s ease; /* 색상 변화를 부드럽게 적용 */
   }
   
   #navbar a:hover {
-	color: blue;
+	color: #006bcc;
   }
   
   #navbar a:first-child {
 	margin-right: 30%; /* 첫 번째 링크를 오른쪽으로 밀어줌 */
-	color: #000;
+	color: #005287;
 	/* color: #5f666e; */
   }
   
@@ -64,15 +65,18 @@ body {
   /* 웹디, 마지막 메뉴 바 색 반전 */  
 
   #navbar.dark {
-  	background: rgba(0, 0, 0, 0.3);
-  	border-bottom: 1px #fff solid;
+  	/* background: rgba(0, 0, 0, 0.3); */
   }  
-  #navbar.dark a {
-  	color: #fff;
+  #navbar.dark .stylenone {
+  	color: #000;
   }
 
+  #navbar.dark a {
+	/* color: #006bcc; */
+}  
+
   #navbar.dark a:hover {
-	color: blue;
+	color: #006bcc;
 }  
   
 /* 스크롤 시에 텍스트 효과 */
@@ -145,7 +149,7 @@ p{
 }
 
 
-/* text 애니메이션 - 테스트 진행 중 */
+/* text 애니메이션 */
 
 .animate__animated.title_1 {
 	--animate-duration: 1.2s;
@@ -164,78 +168,104 @@ p{
 * --------------------------------------- */
 
 #main-bg {
-	background-image: url('img/main-bg.png');
+	background-image: url('img/testmain-bg.png');
 	height:100%
 }
 
+/* [#1] Main 메인 텍스트 타원형 */
 
+
+.st0 { 
+	fill: none; 
+	stroke: #005287;
+	stroke-width: 0.02; 
+	stroke-linecap: round; 
+	stroke-linejoin: round; 
+	stroke-miterlimit: 10;
+ }
+
+.ellipse-wrap {
+	margin-top:-100px;
+	overflow: hidden;
+ }
+
+ #mySvg {
+	top:0;
+	position: relative;
+	transform: rotate(-2deg); /* 회전 적용 */
+ }
 
 /* [#1] Main 메인 세팅 */
 
-#section0, #my-portfolio, #work-web, #work-design {
+.main_tit {
+	color:  rgba(255, 255, 255, 0.6);
+	position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1; /* 다른 요소 위에 보이도록 하는 속성 */}
+	
+
+.title_1, .title_2, .title_3 {
+	color: rgba(255, 255, 255, 0.6);
+  	text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 40px #006bcc, 0 0 55px #006bcc, 0 0 75px #006bcc;
+	width:100%;
+	text-align: center; 
+	display: inline-block;}
+
+.title_1 {
+	font-size: 6.5vw;
+	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
+	font-weight: 800;
+}
+
+#my-portfolio, #work-web, #work-design {
 	margin-left: 10em;
 }
 
 #section0 h1, h2, h3, h4, p {
 	margin:0;
-	text-align:left;
 }
 
-#section0 h2 {
-	font-size: 8em;
-	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
-	font-weight: 800;
-	color: #000;
-}
+.point {color:rgba(11, 31, 44, 1);}
 
 #section0 .point1 {
 	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
 	font-weight: 500;
 	font-style: italic;
+	color: rgba(255, 255, 255, 0.6)
 }
 
 #section0 h3 {
-	font-size: 6.5em;
+	font-size: 5.5vw;
 	font-family: 'Petit Formal Script', cursive;
 	font-weight: 900;
-	color: #000;
 }
 
 #section0 .point2 {
-	color:blue;
+	color:rgba(11, 31, 44, 1);
 	font-family: 'playfair display', sans-serif;
 	font-style:italic;
 }
 
 #section0 .point3 {
 	font-family: 'Petit Formal Script', cursive;
-
-	/* transform-origin: 50% 50%;
-	animation: rotate 5s linear infinite;
-	display: inline-block; */
+	font-size:3vw;
+	color: #f1f1f1;
 }
-
-/* 회전할 때 쓰시게
-	@keyframes rotate {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
-} */
 
 
 	#section0 p {
 	font-family:'Archivo', sans-serif;;
 	font-weight: 200;
-	margin-top: 1em;
+	bottom:0
 	}	
 
 /* [#2] My profile - about 나의 프로필 */
 
 #section1{
-	background-image: url(img/about-bg.png);
+	background-image: url(img/testabout-bg.png);
 }
 
 /* 텍스트 애니메이션 */
@@ -294,19 +324,20 @@ p{
 #section1 h1 {
 	text-align: left;
 	display: inline-block;
-	font-size: 6em;
+	font-size: 5vw;
 	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
 	font-weight: 800;
-	color: #000;
-	/* text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 4px 4px 0 #000; */
+	color: rgba(0, 0, 0, 0.9);
+	text-shadow: -1px 0 #0073bd, 0 1px #0073bd, 1px 0 #0073bd, 0 -1px #0073bd;
 	}
 
 #section1 h2 {
-	font-size: 4.0em;
+	font-size: 3vw;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
 	letter-spacing:-0.04em;
-	color: #000;
+	color: #0073bd;
+	
 	margin:0;
 }
 
@@ -316,20 +347,39 @@ p{
 	letter-spacing:0em;
 	font-style:italic;
 	margin:0;
+	text-shadow: -1px 0 #0073bd, 0 1px #0073bd, 1px 0 #0073bd, 0 -1px #0073bd;
+	color: rgba(153, 175, 255, 0.4)
 }
 
 #section1 p, button {
 	font-family: 'Noto Sans KR', sans-serif;
 	letter-spacing:-0.1em;
+	color: #000;
 	/* margin-top:2em; */
 }
 
 #section1 p {
-	margin-top: 14px;
-	font-size: 1.4em;
+	margin-top: 18px;
+	padding-left: 5px;
+	font-size: 1.3vw;
 	font-weight: 300;
-	line-height:1.65em;
+	line-height:1.2em;
+
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: justify;
+	color:rgba(30, 128, 189, 0.8);
+	padding: 2px 10px 2px 10px
 }
+
+#section1 .t_over {
+	font-family: 'Noto Sans KR', sans-serif;
+	color: #19bcff;
+	font-weight: 100;
+	letter-spacing: -0.1em;
+	font-style: normal;
+	font-size: 1.3vw;}
+
 #section1 .tape1 {
 	position: absolute;
 	margin-left:88em;
@@ -374,20 +424,26 @@ p{
 /* fade-down 효과 */
 /* ------------------------------------------ */
 
-#my-portfolio h1 {line-height:112%}
+#my-portfolio h1 {
+	margin-bottom: 3px;
+	line-height:100%}
+
+#my-portfolio .iam {
+	color: #0073bd;
+	text-shadow: none;}
 
 #my-portfolio button {
 	margin-top:3em;
-	padding: 10px 40px 10px 40px;
+	padding: 0.5vw 2vw 0.5vw 2vw;
 	cursor: pointer;
-	background-color: rgba(97, 186, 253, 0.2);
+	background-color: rgba(97, 186, 253, 0.1);
 	border: 2px solid #000;
 	border-radius: 100px;
 
 	transition: 0.4s ease; 
 
 	text-transform:uppercase;
-	font-size:20px;
+	font-size:1vw;
 	font-weight:500;
 }
 
@@ -397,12 +453,14 @@ color:#000;}
 
 #my-portfolio button:hover {
 background: #000;
+transition: 0.8s ease; 
 }
 
 #my-portfolio button:hover a {
 color:#fff;
 font-weight:500;
-font-size:20px;
+font-size:1vw;
+transition: 0.8s ease; 
 }
 
 /* [#3] work, web site 웹 사이트 포트폴리오 */
@@ -413,42 +471,59 @@ font-size:20px;
 	margin: 0;
 }
 
-#work-web h1, h2, h3, p, span {
-	color: #000;
+#work-web h1, 
+#work-web h2, 
+#work-web span {
+	color: #0073bd;
 	text-align: left;
-	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
+	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
+}
+
+#work-web h3, #work-web p {
+	color: #0073bd;
+	text-align: left;
+	font-family: 'Noto Sans KR', sans-serif;
 }
 
 #work-web h1 {
-	font-size: 4em;
-	font-weight: 600;
+	font-size: 3.5vw;
+	font-weight: 700;
 	margin-bottom:0.1em;
 	}
 
 #work-web h2 {
-	font-size: 1.6em;
+	font-size: 1.4vw;
 	font-weight: 400;
 	margin-bottom:2em;
+	color:  rgba(94, 137, 163, 0.6)
 	}
 
 #work-web h3 {
-	font-size: 2.6em;
-	font-weight: 500;
-	letter-spacing:-2px;
+	font-size: 2.1vw;
+	font-weight: 700;
+	letter-spacing:-1px;
 	/* margin-top:2em; */
 	margin-bottom:0.2em;
-	}
+	color: rgba(0, 0, 0, 0.9);
+	text-shadow: -1px 0 #0073bd, 0 1px #0073bd, 1px 0 #0073bd, 0 -1px #0073bd;}
+
 
 #work-web p {
-	font-size: 1.4em;
-	font-weight: 400;
+	font-size: 1.2vw;
+	font-weight: 300;
 	margin-bottom:2em;
+	letter-spacing:-1px;
 	}
+
+#work-web .en {
+	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
+	font-size: 1.2vw;
+}
 
 #work-web span {
 	font-size: 0.8em;
 	font-weight: 400;
-	color: #828282;
+	color: rgba(94, 137, 163, 0.6)
 	}
 
 .web-portfolio {margin-left: 10em;}
@@ -459,7 +534,7 @@ font-size:20px;
 		cursor: pointer;
 		background: none;
 		backdrop-filter: blur(5px);
-		border: 2px solid #000;
+		border: 2px solid #0073bd;
 		border-radius: 100px;
 	
 		transition: 0.4s ease; 
@@ -471,14 +546,15 @@ font-size:20px;
 
 .web-portfolio button a {
 	transition: 0.8s ease; 
-	color:#000;}
+	color:#0073bd;}
 
 .web-portfolio button:hover {
-	background: #000;
+	background: rgba(15, 29, 37, 0.2);
+	transition: 0.8s ease; 
 }
 
 .web-portfolio button:hover a {
-	color:#fff;
+	color:#0e9cdf;
 	font-weight:500;
 }
 
@@ -500,16 +576,16 @@ font-size:20px;
 	position: left;
 	height:100%;
 	margin: 0;
-	background-image:url(img/design-bg.png)}
+	background-image:url(img/testdesign-bg.png)}
 
-.design {top:0; margin:10em 10em 2em 10em}
+.design {top:0; margin:10em 10em 2em 10em;}
 
 #work-design h1 {
 	text-align: left;
 	font-size: 4em;
 	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
-	font-weight: 600;
-	color: #fff;
+	font-weight: 700;
+	color: #0073bd;
 	margin-bottom:0.1em;
 	}
 
@@ -518,7 +594,7 @@ font-size:20px;
 	font-size: 1.6em;
 	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
 	font-weight: 400;
-	color: #fff;
+	color:rgba(0, 115, 189, 0.6)
 	}
 
 .work-menu li {
@@ -541,20 +617,22 @@ font-size:20px;
     cursor: pointer;
 	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
-	border: 2px solid #fff;
+	border: 2px solid rgba(0, 115, 189, 1);
 	border-radius: 100px;
 
 	transition: 1s ease; /* 기존 개체에다 transition 속성 추가 */
 
 	text-transform:uppercase;
 	font-size:16px;
-	color:#fff;
+	color:rgba(0, 115, 189, 1);
+	font-weight: 700;
 	letter-spacing:1px;
 	margin-bottom:1em;
+	font-weight: 600;
 }
 
 .filter-button:hover {
-	background: #fff;
+	background: rgba(0, 115, 189, 0.8);
 	color:#000;
 	font-size:16px;
 	font-weight:600;
@@ -629,7 +707,8 @@ font-size:20px;
     padding: 40px;
     /* border-radius: 8px; */
     position: relative;
-    text-align: center;
+    text-align: left;
+	letter-spacing: -1px;
 }
 
 #modalTitle {
@@ -711,28 +790,35 @@ font-size:20px;
 /* [#5] footer 마무리 */
 
 #footer {
-	background-image:url(img/thx.png);
+	font-family: 'Noto Sans KR', sans-serif;
+	background-image:url(img/testthx.png);
 	height:100%}
 	
 #footer .thx p {
-	color:#fff; 
+	color:rgba(38, 133, 216, 0.8); 
 	text-align:center;
 	margin-bottom: 0.6em}
 
 #footer .fin {
-  font-size:0.5em;
-  line-height:4em;}
-
-#footer .fin2 {
-	margin-top:1em;
+	margin-top:2em;
 }
 
-#footer .fin2 p {
-	color:#b59a82;
+#footer .fin p {
+	color:rgba(166, 185, 202, 0.4);
 	text-align:center;
-	font-size:0.9em;
-	line-height:1.5;
+	font-size: 0.8vw;
+	line-height:1.6;
 	}
+
+#footer .fin_t {margin-bottom: 10px;}
+
+#footer .kr {
+	font-weight: 500;
+	letter-spacing:-2px;}
+
+	#footer .email {
+	font-size:2vw;
+	font-family: Montserrat, sans-serif;}
 
 /* 텍스트 웨이브 효과 */
 
@@ -743,11 +829,11 @@ font-size:20px;
 	font-weight: 700;
 	
 	margin-bottom: 0.2em;
-	text-shadow: 0 8px 9px #764518, 0px -2px 1px #241d17;
+	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;
 }
 
 .wave_text span {
-	color: #ff8212;}
+	color: rgba(255, 255, 255, 0.6);}
 
 
 @keyframes anime_textup { 0% { top: 0; } 20% { top: -1rem; } 40% { top: 0 } 60% { top: 0 } 80% { top: 0 } 100% { top: 0 } }
@@ -780,7 +866,7 @@ font-size:20px;
 	.wave_text span:nth-of-type(7) {
 		animation-delay: .7s;
 		font-size:80px; 
-		color: #ff8212; 
+		color: #fff; 
 		letter-spacing:-28px;
 	}
 	.wave_text span:nth-of-type(8) {
