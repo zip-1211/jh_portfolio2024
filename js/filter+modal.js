@@ -47,19 +47,19 @@
         });
     
         // 모달 관련 JavaScript 코드
-        function openModal(imageSrc, caption2, caption, title, video) {
+        function openModal(imageSrc, caption3, caption2, caption, title, video) {
             var modal = document.getElementById("myModal");
             var modalImage = document.getElementById("modalImage");
             var modalCaption = document.getElementById("modalCaption");
             var modalCaption2 = document.getElementById("modalCaption2");
-            // var modalCaption3 = document.getElementById("modalCaption3");
+            var modalCaption3 = document.getElementById("modalCaption3");
             // var videoContent = document.getElementById("video-content");
             var modalTitle = document.getElementById("modalTitle");
             
             modalImage.src = imageSrc;
             modalCaption.innerText = caption;
             modalCaption2.innerText = caption2;
-        //  modalCaption3.innerText = caption3;
+            modalCaption3.innerText = caption3;
             modalTitle.innerText = title;
     
             modal.style.display = "flex";

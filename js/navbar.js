@@ -10,7 +10,7 @@
         document.getElementById('navbar').classList.remove('dark');
 
 // Add styles for the current section
-if (activeSection.id === 'work-design' || activeSection.id === 'footer') {
+if (activeSection.id === 'section1' || activeSection.id === 'footer') {
     document.getElementById('navbar').classList.add('dark');
 }
 }
