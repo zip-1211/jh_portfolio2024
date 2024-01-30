@@ -64,9 +64,6 @@ body {
 
   /* 웹디, 마지막 메뉴 바 색 반전 */  
 
-  #navbar.dark {
-  	/* background: rgba(0, 0, 0, 0.3); */
-  }  
   #navbar.dark .stylenone {
   	color: #000;
   }
@@ -266,7 +263,7 @@ p{
 /* [#2] My profile - about 나의 프로필 */
 
 #section1{
-	background-image: url(img/about-bg.png);
+	background-image: url(img/about.png);
 	background-size:cover;
 }
 
@@ -290,10 +287,15 @@ p{
 }
 .section.active .animated-text5 {
 	animation: bounce 2.8s forwards;
+	margin-right: 12px;
 }
+
 .section.active .animated-text6 {
 	animation: bounce 3s forwards;
-	margin-right: 12px;
+}
+
+.section.active .animated-text6 {
+	animation: bounce 3.2s forwards;
 }
 
 @keyframes bounce {
@@ -323,35 +325,45 @@ p{
 
 /* 텍스트 애니메이션 끝 */
 
+#section1 .hello {margin-left:8px;}
+#section1 .hello h1 {
+	font-family: 'playfair display', sans-serif;
+	font-style:italic;
+	font-size: 52px;
+	font-weight: bold;
+	letter-spacing:-2px;
+	margin-bottom: 12px;
+	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;
+
+	margin-bottom:20px;}
+
 #section1 h1 {
 	text-align: left;
 	display: inline-block;
-	font-size: 90px;
-	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
-	font-weight: 800;
-	color: rgba(0, 0, 0, 0.9);
-	text-shadow: -1px 0 #0073bd, 0 1px #0073bd, 1px 0 #0073bd, 0 -1px #0073bd;
+	font-size: 26px;
+	letter-spacing:-2px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 100;
+	color: #fff;
+
+	margin-bottom: 10px;
 	}
 
-#section1 h2 {
-	font-size: 65px;
-	font-family: 'Noto Sans KR', sans-serif;
-	font-weight: 200;
-	letter-spacing:-0.04em;
-	color: #0073bd;
-	
-	margin:0;
-}
 
 #section1 span {
-	font-size: 60px;
-	font-family: 'playfair display', sans-serif;
-	letter-spacing:0em;
-	font-style:italic;
-	margin:0;
-	text-shadow: -1px 0 #0073bd, 0 1px #0073bd, 1px 0 #0073bd, 0 -1px #0073bd;
-	color: rgba(153, 175, 255, 0.4)
+	text-align: left;
+	display: inline-block;
+	font-size: 27px;
+	letter-spacing:-2px;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+	color: #0073bd;
+	text-shadow: none;
+
+	/* border:1px solid #0073bd; */
+	/* border-radius: 200px; */
 }
+
 
 #section1 p, button {
 	font-family: 'Noto Sans KR', sans-serif;
@@ -360,20 +372,18 @@ p{
 	/* margin-top:2em; */
 }
 
-.intro {margin-top: 4px;}
+
 
 #section1 p {
-	margin-top: 18px;
-	padding-left: 5px;
-	font-size: 24px;
+	margin-top: 26px;
+	padding-left: 2px;
+	font-size: 22px;
 	font-weight: 300;
 	line-height:1.2em;
 
 	display: inline-block;
-	background-color: rgba(0, 0, 0, 0.5);
 	text-align: justify;
-	color:rgba(30, 128, 189, 0.8);
-	padding: 2px 10px 2px 10px
+	color:#0073bd;
 }
 
 #section1 .t_over {
@@ -401,21 +411,53 @@ p{
 	z-index:2;
 }
 
+/* -- 이모지1 -- */
 #section1 .selfie img {
 	position: absolute;
-	z-index:1;
-	margin-left: 66em;
-
-	width: 500px;
-
+	top:0;
+	margin-top:12em;
+	margin-left: 64em;
+	width: 430px;
 	padding:5px;
-	border: 1px solid #000;
+
+	transform: rotate(-5deg);
+	
 }
+
+
+/* -- 이모지2 -- */
+/* 
+#section1 .selfie2 img {
+	position: absolute;
+	top:0;
+	margin-top:34em;
+	margin-left: 78em;
+	width: 400px;
+	padding:5px;
+
+	transform: rotate(15deg);
+} */
 
 /* about 버튼 */
 
+#section1 .notion {
+	position: absolute;
+	top:0;
+	margin-top:34em;
+	margin-left: 70em;
+	width: 400px;
+	padding:5px;
+}
+
+#section1 .notion p {
+	color: #fff;
+	font-weight: 300;
+	margin-bottom: 18px;
+}
+
 #section1 button {
-	margin-top:1.4em;
+	/* margin-top:1.4em; */
+	margin-left:18px;
 	background-color:transparent;
 	padding:0.4em 0.8em 0.4em 0.8em;
 	text-align:left;
@@ -426,50 +468,46 @@ p{
 	color: #000;
 }
 
+
 /* fade-down 효과 */
 /* ------------------------------------------ */
 
 #my-portfolio h1 {
-	margin-bottom: 3px;
-	line-height:100%}
-
-#my-portfolio .iam {
-	color: #0073bd;
-	text-shadow: none;}
+	line-height:140%;}
 
 #my-portfolio button {
-	margin-top:3em;
 	padding: 10px 25px 10px 25px;
 	cursor: pointer;
 	background-color: rgba(97, 186, 253, 0.2);
-	border: 2px solid #000;
+	border: 1px solid #fff;
 	border-radius: 100px;
 
-	transition: 0.4s ease; 
+	transition: 0.8s ease; 
 
 	font-size:20px;
-	font-weight:600;
+	font-weight:500;
 	letter-spacing:-1.8px;
 }
 
 #my-portfolio button a {
-	transition: 0.4s ease; 
-	color:#000;}
+	transition: 0.8s ease; 
+	color:#fff;
+	font-weight: 300;}
 
 #my-portfolio button:hover {
 	background-color: rgba(97, 186, 253, 0.4);
 	transition: 0.8s ease; 
+	border: 1px solid #000000;
 
 }
 
 #my-portfolio button:hover a {
 color: #000;
-font-weight:600;
+font-weight:500;
 font-size:20px;
 transition: 0.8s ease; 
 }
 
-.click-me {}
 
 /* [#3] work, web site 웹 사이트 포트폴리오 */
 
@@ -479,7 +517,12 @@ transition: 0.8s ease;
 	margin: 0;
 }
 
-#work-web h1, 
+#work-web h1 {
+	color:#fff;
+	text-align: left;
+	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
+	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;}
+
 #work-web h2, 
 #work-web span {
 	color: #0073bd;
@@ -503,31 +546,47 @@ transition: 0.8s ease;
 	font-size: 23px;
 	font-weight: 400;
 	margin-bottom:2em;
-	color:  rgba(94, 137, 163, 0.6)
+	color:  #0073bd;
 	}
 
 #work-web h3 {
 	font-size: 36px;
-	font-weight: 700;
+	font-weight: 500;
 	letter-spacing:-1px;
 	/* margin-top:2em; */
 	margin-bottom:0.2em;
-	color: rgba(0, 0, 0, 0.9);
-	text-shadow: -1px 0 #0073bd, 0 1px #0073bd, 1px 0 #0073bd, 0 -1px #0073bd;}
+	color: #fff}
 
 
 #work-web p {
-	color: rgba(0, 115, 189, 0.7);
-	font-size: 20px;
-	font-weight: 300;
-	margin-bottom:2em;
+	color: rgba(249, 253, 255, 0.9);
+	font-weight: 200;
+	margin-bottom:6px;
 	letter-spacing:-1px;
 	}
 
 #work-web .en {
 	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
 	font-size: 22px;
+	margin-bottom:40px;
 }
+
+.ex {
+	font-size:9px;}
+
+/*
+.ex p {
+	width: 660px;
+	text-align: justify;
+	background-color: rgba(0, 0, 0, 0.5);
+	color:rgba(30, 128, 189, 0.8);
+	padding: 2px 10px 2px 10px
+}
+*/
+
+.percent {
+	margin-top: 50px;
+	font-size:20px}
 
 #work-web span {
 	font-size: 0.8em;
@@ -535,15 +594,16 @@ transition: 0.8s ease;
 	color: rgba(94, 137, 163, 0.6)
 	}
 
+
 .web-portfolio {margin-left: 10em;}
 
 .web-portfolio button {
 		margin-top:3em;
-		padding: 10px 40px 10px 40px;
+		padding: 8px 38px 8px 38px;
 		cursor: pointer;
 		background: none;
 		backdrop-filter: blur(5px);
-		border: 2px solid #0073bd;
+		border: 1px solid #fff;
 		border-radius: 100px;
 	
 		transition: 0.4s ease; 
@@ -551,21 +611,31 @@ transition: 0.8s ease;
 		text-transform:uppercase;
 		font-size:18px;
 		font-weight:500;
+
+		transition: 0.8s ease; 
 }
 
 .web-portfolio button a {
 	transition: 0.8s ease; 
-	color:#0073bd;}
+	color:#fff;
+	font-weight: 300;
+}
 
 .web-portfolio button:hover {
 	background: rgba(15, 29, 37, 1);
 	transition: 0.8s ease; 
+	border:1px solid #0073bd;
 }
 
 .web-portfolio button:hover a {
 	color:#0e9cdf;
 	font-weight:500;
+
+	transition: 0.8s ease; 
 }
+
+
+#web {background-image: url('img/web1.png'); background-size:cover;}
 
 #web0 {background-image: url('img/web1.png'); background-size:cover;}
 
