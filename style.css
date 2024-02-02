@@ -262,10 +262,11 @@ p{
 
 /* [#2] My profile - about 나의 프로필 */
 
-#section1{
+#section1 {
 	background-image: url(img/about.png);
 	background-size:cover;
 }
+
 
 /* 텍스트 애니메이션 */
 .animated-text {
@@ -325,7 +326,8 @@ p{
 
 /* 텍스트 애니메이션 끝 */
 
-#section1 .hello {margin-left:8px;}
+#section1 .hello {padding-left: 5px;}
+
 #section1 .hello h1 {
 	font-family: 'playfair display', sans-serif;
 	font-style:italic;
@@ -340,7 +342,7 @@ p{
 #section1 h1 {
 	text-align: left;
 	display: inline-block;
-	font-size: 26px;
+	font-size: 21px;
 	letter-spacing:-2px;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 100;
@@ -353,7 +355,7 @@ p{
 #section1 span {
 	text-align: left;
 	display: inline-block;
-	font-size: 27px;
+	font-size: 22px;
 	letter-spacing:-2px;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 300;
@@ -364,6 +366,16 @@ p{
 	/* border-radius: 200px; */
 }
 
+#section1 #about-wrap {
+	width:800px;
+	height: auto;
+}
+
+#section1 .about {
+	width:650px;
+	float:left;
+	margin-left: 90px;
+}
 
 #section1 p, button {
 	font-family: 'Noto Sans KR', sans-serif;
@@ -374,8 +386,8 @@ p{
 
 
 
-#section1 p {
-	margin-top: 26px;
+#section1 .notion p {
+	margin-top: 34px;
 	padding-left: 2px;
 	font-size: 22px;
 	font-weight: 300;
@@ -415,49 +427,74 @@ p{
 #section1 .selfie img {
 	position: absolute;
 	top:0;
-	margin-top:12em;
-	margin-left: 64em;
-	width: 430px;
-	padding:5px;
+	margin-left: 700px;
+	margin-top:16.4em;
+	width: 340px;
 
 	transform: rotate(-5deg);
 	
 }
 
+/* -- 프로필 -- */
 
-/* -- 이모지2 -- */
-/* 
-#section1 .selfie2 img {
-	position: absolute;
-	top:0;
-	margin-top:34em;
-	margin-left: 78em;
-	width: 400px;
-	padding:5px;
+#section1 .profile {
+	position:absolute;
+	width:500px;
+	line-height: 220%;
 
-	transform: rotate(15deg);
-} */
+	margin-top: 400px;
+	margin-left: 1050px;
+	
+	top:0
+	}
+
+#section1 .profile p {
+		font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
+		font-size: 18px;
+		font-weight: 200;
+		color:#fff;
+
+		letter-spacing: 0px;
+}
+
+/* -- 스킬 -- */
+
+#section1 .set {
+	width:900px;
+	position:absolute;
+	margin-left: 790px;
+	}
+
+#section1 .set p {
+	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
+	letter-spacing: 0px;
+	font-weight:500;
+	font-size: 20px;
+
+	margin-bottom:8px;
+
+	color:#fff;
+}
+
+#section1 .set img {
+	width:28px
+}
 
 /* about 버튼 */
 
 #section1 .notion {
 	position: absolute;
-	top:0;
-	margin-top:34em;
-	margin-left: 70em;
-	width: 400px;
-	padding:5px;
+	width: 600px;
 }
 
 #section1 .notion p {
 	color: #fff;
-	font-weight: 300;
-	margin-bottom: 18px;
+	font-weight: 200;
 }
 
 #section1 button {
 	/* margin-top:1.4em; */
-	margin-left:18px;
+	margin-left:14px;
 	background-color:transparent;
 	padding:0.4em 0.8em 0.4em 0.8em;
 	text-align:left;
@@ -473,10 +510,10 @@ p{
 /* ------------------------------------------ */
 
 #my-portfolio h1 {
-	line-height:140%;}
+	line-height:130%;}
 
 #my-portfolio button {
-	padding: 10px 25px 10px 25px;
+	padding: 8px 20px 8px 20px;
 	cursor: pointer;
 	background-color: rgba(97, 186, 253, 0.2);
 	border: 1px solid #fff;
@@ -484,7 +521,7 @@ p{
 
 	transition: 0.8s ease; 
 
-	font-size:20px;
+	font-size:19.5px;
 	font-weight:500;
 	letter-spacing:-1.8px;
 }
@@ -504,7 +541,7 @@ p{
 #my-portfolio button:hover a {
 color: #000;
 font-weight:500;
-font-size:20px;
+font-size:19.5px;
 transition: 0.8s ease; 
 }
 
@@ -521,7 +558,8 @@ transition: 0.8s ease;
 	color:#fff;
 	text-align: left;
 	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
-	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;}
+	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;
+}
 
 #work-web h2, 
 #work-web span {
@@ -537,12 +575,14 @@ transition: 0.8s ease;
 }
 
 #work-web h1 {
+	margin-left: 25px;
 	font-size: 60px;
 	font-weight: 700;
 	margin-bottom:0.1em;
 	}
 
 #work-web h2 {
+	margin-left: 25px;
 	font-size: 23px;
 	font-weight: 400;
 	margin-bottom:2em;
@@ -550,6 +590,7 @@ transition: 0.8s ease;
 	}
 
 #work-web h3 {
+	margin-left: 25px;
 	font-size: 36px;
 	font-weight: 500;
 	letter-spacing:-1px;
@@ -559,6 +600,7 @@ transition: 0.8s ease;
 
 
 #work-web p {
+	margin-left: 25px;
 	color: rgba(249, 253, 255, 0.9);
 	font-weight: 200;
 	margin-bottom:6px;
@@ -598,6 +640,7 @@ transition: 0.8s ease;
 .web-portfolio {margin-left: 10em;}
 
 .web-portfolio button {
+		margin-left: 25px;
 		margin-top:3em;
 		padding: 8px 38px 8px 38px;
 		cursor: pointer;
@@ -662,15 +705,18 @@ transition: 0.8s ease;
 .design {top:0; margin:10em 10em 2em 10em;}
 
 #work-design h1 {
+	margin-left: 25px;
 	text-align: left;
 	font-size: 4em;
 	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
 	font-weight: 700;
-	color: #0073bd;
+	color: #ffff;
+	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;
 	margin-bottom:0.1em;
 	}
 
 #work-design h2 {
+	margin-left: 25px;
 	text-align: left;
 	font-size: 1.6em;
 	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
@@ -685,6 +731,7 @@ transition: 0.8s ease;
 /* 갤러리 메뉴 버튼 */
 
 .work-menu {
+	margin-left: 25px;
     display: flex;
     flex-wrap: wrap;
 	margin-top:2em;
