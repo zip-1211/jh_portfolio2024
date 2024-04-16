@@ -7,9 +7,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Petit+Formal+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cabin&family=Manrope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wght@100&family=Cabin&family=Manrope&family=Red+Hat+Display:ital,wght@0,300;1,300&display=swap');
-
-
+@import url('https://fonts.googleapis.com/css2?family=Song+Myung&display=swap');
 @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR&family=Song+Myung&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hahmlet:wght@100..900&family=Noto+Serif+KR&family=Song+Myung&display=swap');
 
 /* https://animate.style/ - 애니메이션 */
 
@@ -36,14 +37,13 @@ body {
 	padding: 16px;
 	z-index: 1000; /* 메뉴를 다른 요소 위에 유지하기 위한 값 */
 
-	font-weight: 600;
-	font-family: Montserrat, sans-serif;
+	font-weight: 300;
+	font-family: 'playfair display', sans-serif;
 	letter-spacing: 1px;
   }
   
   #navbar a {
-	color: #005287;
-	/* text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 10px #006bcc, 0 0 50px #006bcc, 0 0 10px #006bcc, 0 0 50px #006bcc, 0 0 5px #006bcc; */
+	color: #ffff;
 	text-decoration: none;
 	transition: color 0.6s ease; /* 색상 변화를 부드럽게 적용 */
   }
@@ -54,23 +54,24 @@ body {
   
   #navbar a:first-child {
 	margin-right: 30%; /* 첫 번째 링크를 오른쪽으로 밀어줌 */
-	color: #005287;
-	/* color: #5f666e; */
+	color: #ffff;
   }
   
   #navbar a:not(:first-child) {
 	margin-right: 10px; /* 나머지 링크들 간의 간격 */
   }
 
-  /* 웹디, 마지막 메뉴 바 색 반전 */  
+  /* 웹디, 마지막 메뉴 바 색 반전
 
   #navbar.dark .stylenone {
   	color: #000;
   }
+  */ 
 
   #navbar.dark a {
 	/* color: #006bcc; */
 }  
+
 
   #navbar.dark a:hover {
 	color: #006bcc;
@@ -149,23 +150,27 @@ p{
 /* text 애니메이션 */
 
 .animate__animated.title_1 {
-	--animate-duration: 1.2s;
+	--animate-duration: 1.8s;
   }
 
 .animate__animated.title_2 {
-	--animate-duration: 1.6s;
+	--animate-duration: 2.5s;
 }  
 
 .animate__animated.title_3 {
-	--animate-duration: 2s;
+	--animate-duration: 3s;
+}  
+
+.animate__animated.title_4 {
+	--animate-duration: 3.5s;
 }  
 
 
 /* Sections backgrounds
 * --------------------------------------- */
 
-#main-bg {
-	background-image: url('img/main-bg.png');
+#main-bg, #section1, #work-design, #footer {
+	background-image: url('img/bg.png');
 	background-size:cover;
 	height:100%
 }
@@ -182,11 +187,6 @@ p{
 	stroke-miterlimit: 10;
  }
 
-.ellipse-wrap {
-	margin-top:-100px;
-	overflow: hidden;
- }
-
  #mySvg {
 	top:0;
 	position: relative;
@@ -195,28 +195,32 @@ p{
 
 /* [#1] Main 메인 세팅 */
 
-.main_tit {
+	.main_tit {
 	color:  rgba(255, 255, 255, 0.6);
 	position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 1; /* 다른 요소 위에 보이도록 하는 속성 */}
 	
 
-.title_1, .title_2, .title_3 {
-	color: rgba(255, 255, 255, 0.6);
-  	text-shadow: 0 0 4px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 40px #006bcc, 0 0 55px #006bcc, 0 0 75px #006bcc;
+	.title_1, .title_2, .title_3, .title_4 {
+	color: rgba(255, 255, 255, 1);
 	width:100%;
-	text-align: center; 
+	text-align: left;
+	padding-left:8%;
 	display: inline-block;}
 
-.title_1 {
-	font-size: 6.5vw;
-	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
-	font-weight: 800;
-}
+	.title_1 {padding-left:8.6%; margin-bottom: 40px;}
+	.title_2 {margin-bottom: 2px;}
+
+	.title_2, .title_3 {
+	font-family: "Noto Serif KR", serif;
+	font-weight: 300;
+	font-style: italic;}
+
+	.title_4 {margin-top: 150px;}
 
 #my-portfolio, #work-web, #work-design {
 	margin-left: 10em;
@@ -226,34 +230,6 @@ p{
 	margin:0;
 }
 
-.point {color:rgba(11, 31, 44, 1);}
-
-#section0 .point1 {
-	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
-	font-weight: 500;
-	font-style: italic;
-	color: rgba(255, 255, 255, 0.6)
-}
-
-#section0 h3 {
-	font-size: 5.5vw;
-	font-family: 'Petit Formal Script', cursive;
-	font-weight: 900;
-}
-
-#section0 .point2 {
-	color:rgba(11, 31, 44, 1);
-	font-family: 'playfair display', sans-serif;
-	font-style:italic;
-}
-
-#section0 .point3 {
-	font-family: 'Petit Formal Script', cursive;
-	font-size:3vw;
-	color: #f1f1f1;
-}
-
-
 	#section0 p {
 	font-family:'Archivo', sans-serif;;
 	font-weight: 200;
@@ -262,54 +238,6 @@ p{
 
 /* [#2] My profile - about 나의 프로필 */
 
-#section1 {
-	background-image: url(img/about.png);
-	background-size:cover;
-}
-
-
-/* 텍스트 애니메이션 */
-.animated-text {
-	transform: translateY(20px);
-	animation: fadeInUp 3s forwards;
-}
-
-.section.active .animated-text {
-	animation: bounce 2s forwards;
-}
-.section.active .animated-text2 {
-	animation: bounce 2.2s forwards;
-}
-.section.active .animated-text3 {
-	animation: bounce 2.4s forwards;
-}
-.section.active .animated-text4 {
-	animation: bounce 2.6s forwards;
-}
-.section.active .animated-text5 {
-	animation: bounce 2.8s forwards;
-	margin-right: 12px;
-}
-
-.section.active .animated-text6 {
-	animation: bounce 3s forwards;
-}
-
-.section.active .animated-text6 {
-	animation: bounce 3.2s forwards;
-}
-
-@keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-		transform: translateY(0);
-	}
-	40% {
-		transform: translateY(-10px);
-	}
-	60% {
-		transform: translateY(-5px);
-	}
-}
 
 @keyframes fadeInUp {
 	from {
@@ -326,7 +254,7 @@ p{
 
 /* 텍스트 애니메이션 끝 */
 
-#section1 .hello {padding-left: 5px;}
+#section1 .hello {margin-left: -5px;}
 
 #section1 .hello h1 {
 	font-family: 'playfair display', sans-serif;
@@ -342,7 +270,7 @@ p{
 #section1 h1 {
 	text-align: left;
 	display: inline-block;
-	font-size: 21px;
+	font-size: 24px;
 	letter-spacing:-2px;
 	font-family: 'Noto Sans KR', sans-serif;
 	font-weight: 100;
@@ -374,14 +302,12 @@ p{
 #section1 .about {
 	width:650px;
 	float:left;
-	margin-left: 90px;
 }
 
 #section1 p, button {
-	font-family: 'Noto Sans KR', sans-serif;
-	letter-spacing:-0.1em;
+	font-family: 'playfair display', sans-serif;
+	letter-spacing:-1px;
 	color: #000;
-	/* margin-top:2em; */
 }
 
 
@@ -389,8 +315,8 @@ p{
 #section1 .notion p {
 	margin-top: 34px;
 	padding-left: 2px;
-	font-size: 22px;
-	font-weight: 300;
+	font-size: 24px;
+
 	line-height:1.2em;
 
 	display: inline-block;
@@ -489,7 +415,6 @@ p{
 
 #section1 .notion p {
 	color: #fff;
-	font-weight: 200;
 }
 
 #section1 button {
@@ -513,35 +438,36 @@ p{
 	line-height:130%;}
 
 #my-portfolio button {
-	padding: 8px 20px 8px 20px;
+	padding: 6px 32px 6px 32px;
 	cursor: pointer;
-	background-color: rgba(97, 186, 253, 0.2);
+	background-color: rgba(255, 255, 255, 0.0);
 	border: 1px solid #fff;
 	border-radius: 100px;
 
 	transition: 0.8s ease; 
 
-	font-size:19.5px;
+	font-size:22px;
 	font-weight:500;
-	letter-spacing:-1.8px;
+	letter-spacing:0px;
 }
 
 #my-portfolio button a {
 	transition: 0.8s ease; 
 	color:#fff;
-	font-weight: 300;}
+	font-weight: 500;}
 
 #my-portfolio button:hover {
-	background-color: rgba(97, 186, 253, 0.4);
+	background-color: rgba(247, 247, 247, 1);
 	transition: 0.8s ease; 
-	border: 1px solid #000000;
+	border: 2px solid #000000;
+	color:#000
 
 }
 
 #my-portfolio button:hover a {
 color: #000;
 font-weight:500;
-font-size:19.5px;
+font-size:22px;
 transition: 0.8s ease; 
 }
 
@@ -557,15 +483,15 @@ transition: 0.8s ease;
 #work-web h1 {
 	color:#fff;
 	text-align: left;
-	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
-	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;
+	font-family: 'playfair display', sans-serif;
+	font-style: italic;
 }
 
 #work-web h2, 
 #work-web span {
 	color: #0073bd;
 	text-align: left;
-	font-family: 'Montserrat', sans-serif, 'Noto Sans KR', sans-serif;
+	font-family: 'playfair display', sans-serif;
 }
 
 #work-web h3, #work-web p {
@@ -584,9 +510,9 @@ transition: 0.8s ease;
 #work-web h2 {
 	margin-left: 25px;
 	font-size: 23px;
-	font-weight: 400;
+	font-weight: 100;
 	margin-bottom:2em;
-	color:  #0073bd;
+	color:  #fff
 	}
 
 #work-web h3 {
@@ -677,7 +603,6 @@ transition: 0.8s ease;
 	transition: 0.8s ease; 
 }
 
-
 #web {background-image: url('img/web1.png'); background-size:cover;}
 
 #web0 {background-image: url('img/web1.png'); background-size:cover;}
@@ -698,8 +623,6 @@ transition: 0.8s ease;
 	position: left;
 	height:100%;
 	margin: 0;
-	background-image:url(img/design-bg.png);
-	background-size:cover;
 }
 
 .design {top:0; margin:10em 10em 2em 10em;}
@@ -707,11 +630,11 @@ transition: 0.8s ease;
 #work-design h1 {
 	margin-left: 25px;
 	text-align: left;
-	font-size: 4em;
-	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
-	font-weight: 700;
+	font-size: 4.2em;
+	font-family: 'playfair display', sans-serif;
+	font-style: italic;
+	font-weight: 800;
 	color: #ffff;
-	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;
 	margin-bottom:0.1em;
 	}
 
@@ -719,9 +642,9 @@ transition: 0.8s ease;
 	margin-left: 25px;
 	text-align: left;
 	font-size: 1.6em;
-	font-family: 'Montserrat', sans-serif, 'Petit Formal Script', cursive, 'Noto Sans KR', sans-serif;
+	font-family: 'playfair display', sans-serif;
 	font-weight: 400;
-	color:rgba(0, 115, 189, 0.6)
+	color:#fff;
 	}
 
 .work-menu li {
@@ -738,34 +661,34 @@ transition: 0.8s ease;
 }
 
 .filter-button {
-	font-family: Montserrat, sans-serif;
+	font-family: 'playfair display', sans-serif;
 	
     margin: 14px;
-	padding: 10px 30px 10px 30px;
+	padding: 10px 35px 10px 35px;
     cursor: pointer;
 	background: rgba(0, 0, 0, 0.1);
 	backdrop-filter: blur(5px);
-	border: 2px solid rgba(0, 115, 189, 1);
+	border: 1px solid rgb(255, 255, 255);
 	border-radius: 100px;
 
 	transition: 1s ease; /* 기존 개체에다 transition 속성 추가 */
 
-	text-transform:uppercase;
+	/*text-transform:uppercase; */
 	font-size:16px;
-	color:rgba(0, 115, 189, 1);
-	font-weight: 700;
+	color:rgb(255, 255, 255);
+	font-weight: 500;
 	letter-spacing:1px;
 	margin-bottom:1em;
 	font-weight: 600;
 }
 
 .filter-button:hover {
-	background: rgba(0, 115, 189, 0.8);
+	background: #fff;
 	color:#000;
 	font-size:16px;
 	font-weight:600;
 
-	transition-duration: 0.5s; 
+	transition-duration: 0.8s; 
 }
 
 .work-img {display:block;}
@@ -925,8 +848,6 @@ transition: 0.8s ease;
 
 #footer {
 	font-family: 'Noto Sans KR', sans-serif;
-	background-image:url(img/thx.png);
-	background-size:cover;
 	height:100%}
 	
 #footer .thx p {
@@ -960,19 +881,19 @@ transition: 0.8s ease;
 	font-family: Montserrat, sans-serif;
 }
 
-.email a {color:rgba(38, 133, 216, 0.8);}
+.email a {color:#fff;}
 
 
 /* 텍스트 웨이브 효과 */
 
 .wave_text {
-	font-family: Montserrat, sans-serif;
+	font-family: 'playfair display', sans-serif;
 	text-align:center;
 	font-size: 6em;
 	font-weight: 700;
 	
 	margin-bottom: 0.2em;
-	text-shadow: 0 0 1px #fff, 0 0 10px #fff, 0 0 20px #006bcc, 0 0 30px #006bcc, 0 0 0px #006bcc, 0 0 10px #006bcc, 0 0 0px #006bcc;
+	text-shadow: #fff;
 }
 
 .wave_text span {
@@ -984,14 +905,13 @@ transition: 0.8s ease;
     .wave_text span {
         position: relative;
         animation: anime_textup 2.4s infinite;
-		letter-spacing:-22px;
     }
  
     .wave_text span:nth-of-type(1) {
         animation-delay: .1s;
     }
     .wave_text span:nth-of-type(2) {
-        animation-delay: .2s;
+        animation-delay: .2s; letter-spacing:-802px;
     }
     .wave_text span:nth-of-type(3) {
         animation-delay: .3s;
@@ -1016,3 +936,6 @@ transition: 0.8s ease;
 		animation-delay: .8s;
 	}
 	
+	.wave_text span:nth-of-type(9) {
+		animation-delay: .9s;
+	}
